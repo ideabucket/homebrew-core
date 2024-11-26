@@ -66,7 +66,7 @@ class Micromamba < Formula
   def caveats
     <<~EOS
       Please run the following to setup your shell:
-        #{opt_bin}/mamba shell init -s <your-shell> ~/mamba
+        #{opt_bin}/mamba shell init -s <your-shell> #{prefix}/share/micromamba
       and restart your terminal.
     EOS
   end
